@@ -1,0 +1,56 @@
+h1 {
+    text-align:center;
+    font-family:"Arial Black", "Tahoma", sans-serif;
+    font-size:42px;
+    letter-spacing:3px;
+    color:#151551;
+}
+
+h2 {
+    font-family:"Arial Black", sans-serif;
+    color:#204060;
+    letter-spacing:1px;
+    
+}
+
+h4 {
+    text-align:center;
+}
+
+p {
+    color:#264d73;
+    
+}
+
+span.bluetext {
+    color:#264d73;
+}
+
+span.goldtext {
+    color:#ff4d4d;
+}
+
+figcaption {
+    color:#2d5986;
+}
+
+img.exoheader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", sans-serif;
+    background-color:lavender;
+    
+}
+
+a {
+    text-decoration:none;
+    color:#ff1a1a;
+}
+
+li {
+    color: #86592d;
+}

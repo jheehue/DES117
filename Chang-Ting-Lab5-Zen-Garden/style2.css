@@ -1,0 +1,113 @@
+/* 
+
+Stylesheet Requirements
+
+You should have at least ten different CSS rules applied.
+You may use tag, class or id selectors
+You MUST define at least one font for your document. You must set it up as a cascading font list.
+You MUST define at least one background-color
+You MUST define at least one background image OR background gradient color.
+Your CSS document must be validated via the official CSS validator: link
+Take a screenshot of your page with the CSS applied and post it to your class blog.
+
+Step 2:
+
+Repeat the process again to create a SECOND cascading stylesheet.
+Take your original style.css and rename it style1.css
+Create a new external stylesheet called style.css
+Follow the requirements of the first stylesheet to stylize the HTML document again, make the design different from your original.
+After completing the second stylesheet take a screenshot of your page with the CSS applied and post it to your blog.
+Rename the stylesheet style2.css */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+
+body {
+	margin: 0;
+	padding: 10px;
+    font-family: "Droid Sans","Arial", sans-serif;
+    background: url(bamboo-nav.png);
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-color:white;
+	}
+
+div[class="extra1"] {
+    display: none;
+}
+div[class="page-wrapper"] {
+    padding: 100px 0 0 250px !important;
+}
+
+.extra2 { 
+    position: absolute;
+    top: 1000px; 
+    left: 0px; 
+    width: 300px;
+    height: 600px;
+    background: url(bambooside.png) no-repeat; z-index: 0; }
+
+
+.extra3 {
+	display: block;
+	position: absolute;
+	bottom: -33px;
+	width: 100%;
+	height: 596px;
+	background: url(coffee.jpg) no-repeat;
+	}
+
+
+.summary, .preamble,.supporting {
+    width: 330px;
+}
+
+p {
+	text-align: justify; 
+	font-size: 12px; 
+	line-height: 15px; 
+	margin-top: 10px; 
+	color: #339933;
+	}
+p abbr { font-style: italic; 
+    }
+
+p a, footer a { 
+    color: #800000;
+    text-decoration: none;
+    border-bottom: 1px dotted #800000;
+}
+p a:hover, footer a:hover { 
+    color: #A51A0A; border-style: none;
+}
+footer>a { 
+    border-style: none !important;
+}
+
+a {
+    text-decoration:none;
+    color:#206020;
+}
+
+ul li {
+list-style : none;
+padding-left : 2px;
+height : 25px;
+}
+
+.explanation,.participation,
+.benefits,
+.requirements { 
+    padding-top: 10px; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size:22pt;
+    color:#b32d00;
+}
+h2, h3 {
+font-size : 14pt;
+padding: 5px 1px;
+color: #ac7339;
+}

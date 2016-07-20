@@ -1,0 +1,520 @@
+<!doctyle hmtl>
+
+<!--
+ 
+    THEME: MARBLE
+    By: Ting Chang / DES117 / SS1
+
+-->
+
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+ 
+<style type="text/css">
+ 
+::-webkit-scrollbar {
+    width:4px;
+    height:5px;
+    background:white;
+}
+::-webkit-scrollbar-thumb {
+    background:#b8b8b8;
+}
+
+.one-half column {
+    width:50%;
+}
+body {
+    margin:0px;
+    color:#808080;
+    background:#f8f8f8 ;    
+}
+ 
+.desc,.cap,.txt,.au_cap,.ans,.qut {    
+    font-smooth:always;
+}
+ 
+a:link, a:active, a:visited {
+    text-decoration:none;
+}
+
+pre, p, blockquote,body,big,small,sub,sup {
+    font-size:9px;
+}
+
+p, body, pre, em {
+    font-family:'Open Sans',Arial,sans-serif;
+}
+
+a,.p,.tags {
+    transition:0.5s ease;
+}
+ 
+.c {
+    bottom:30px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+.c, a.top {
+    position:fixed;
+    right:25px;
+}
+a.top {
+    bottom:55px;
+    display:none;
+}
+a.top i {
+    display:block;
+    margin-bottom:2px;
+    font-size:13px;
+    text-align:center;
+}
+ 
+.cp {
+    font-weight:600;
+    letter-spacing:2px;
+    font-size:9px;
+}
+
+.cp,.pag a {
+    display:inline-block;
+    margin:0px 5px;
+}
+
+.pag a {
+    font-size:9px;
+    letter-spacing:0.75px;
+}
+
+.pag {
+    position:relative;
+    text-align:center;
+}
+ 
+#center {
+    min-width:250px;
+    width:350px;
+    max-width:700px;
+}
+ 
+#center {
+    position:relative;
+    margin:auto;
+    width:400px;
+}
+ 
+.entry img {
+    max-width:100%;
+    height:auto;
+}
+.entry {
+    margin:100px 0px;
+}
+ 
+.sidebar {
+    position:fixed;
+    left:0;
+    top:0;
+    width:150px;
+    height:100%;
+    text-align:center;
+    padding:calc(100px/2);
+    background:white;
+    background-image: url(http://mendozamg.com/communities/5/000/001/652/325//images/13300706.jpg);
+}
+ 
+.image {
+    margin-bottom:20px;
+}
+
+.image img{
+    max-width:calc(100% - 2px);
+}
+ 
+.desc{
+    padding:17px 15px;
+    background:white;
+    border:1px solid #d8d8d8k;
+}
+ 
+.links {
+    font-size:0px;
+    padding:5px 0px 0px;}
+.links a{
+    margin:8px 8px 4px;
+    padding-bottom:2px;
+    font-weight:700;
+    font-size:8px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+ 
+.lb {
+    display:none;
+}
+
+.lb a {
+    margin:3px;
+}
+
+.lb a,.links a {
+    display:inline-block;
+}
+ 
+h1 {
+    margin:0px 0px 0px;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:400;
+}
+
+#h1 {
+    font-size:18px;
+    margin:0px 0px 10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:300;
+    padding:6px 1px;
+    background-color:white;
+    
+}
+
+#avatar {
+    margin:50px 0px 10px;
+    padding:20px 6px;
+    background-color:white;
+}
+ 
+ .desc{
+    padding:17px 15px;
+    background:white;
+}
+
+h2 {
+    margin:10px;
+    font-size:11px;
+    letter-spacing:0.4px;
+    font-weight:400;
+}
+ 
+h3 {
+    margin:10px 0px;
+    font-weight:600;
+    font-size:9px;
+    letter-spacing:0.5px;
+}
+ 
+/* Permalinks */
+ 
+.p {
+    padding:6px 8px;
+    
+}
+.p a {
+    display:inline-block;
+    margin:0px 7px 4px 0px;
+    font-size:8px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+ 
+.entry:hover {
+    opacity:1;
+}
+
+.tags a {
+    text-transform:none;
+}
+
+a.nt{
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+ 
+.src {
+    margin-bottom:10px;
+    
+}
+.qut {
+    font-size:11px;
+    padding:20px;
+    letter-spacing:0.5px;
+}
+ 
+ol, ul {
+    padding:0px;
+    list-style-type:none;
+}
+
+ul li,ol li {
+    position:relative;
+    padding-left:20px;
+}
+
+li { 
+    margin:2px;
+}
+
+ 
+p {
+    margin:10px 0px;
+}
+
+b,strong {
+    font-weight:700;
+}
+
+blockquote p{
+    margin:10px 0px;
+}
+
+blockquote{
+    margin:10px 0px;
+    padding-left:10px;
+    border-left:1px solid #d8d8d8;
+}
+ 
+pre {
+    margin:0px;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+}
+ 
+/* Captions */
+ 
+.txt,.ans,.cap,.au_cap {
+    padding:5px;
+    border-bottom:1px solid #d8d8d8;
+}
+ 
+.txt iframe,.ans iframe,.cap iframe,.au_cap iframe {
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+ 
+.pph {
+    text-transform:lowercase;
+    padding:15px;
+    margin-top:50px;
+}
+ 
+.pn ul,.pn ol {
+    margin:0px;
+    list-style-type:none;
+}
+
+.pn li{
+    margin:5px 0px;
+    padding:1px 1px 1px;
+    border-bottom:1px solid #d8d8d8;}
+    
+.pn,.pn img,.pn li:before{
+    display:none;
+}
+.pn {
+    font-size:8px;
+    margin-top:15px;
+}
+.pnh {
+    display:block;
+    margin-top:2px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:8px;
+}
+
+p,blockquote,.lines,.pn,.qut,.desc {
+    line-height:150%;
+}
+
+.perma,.cap,ul,ol {
+    line-height:175%;
+}
+a:hover, a h2:hover {
+    color:#c6d9ec;
+}
+
+a,.p,.perma,.src,.lines b,.tn,h2,ul,ol,.pag {
+    color:gray;
+}
+
+.lines b,.tn,.src,.pag,{
+    letter-spacing:0.5px;
+}
+
+h2 a i,.pag a i {
+    margin:1px 1px;
+}
+
+.ph {
+    padding:15px;
+}
+
+.ph,.qut,.pph,.txt,.ask {
+    background:white;
+    border:1px solid #e8e8e8;
+}
+
+.txt a,.ans a,.cap a,.au_cap a,.src a,.links a {
+    
+    border-bottom:1px solid #c6c7ba;
+}
+
+.txt a:hover,.ans a:hover,.cap a:hover,.au_cap a:hover,.src a:hover,.links a:hover{
+    border-bottom:1px solid;
+    border-color:rgba(#c6c7ba, 0.4);
+}
+
+#titletext {
+    font-size:20px;
+}
+
+img {
+    display:block;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+
+{block:Description}
+<center id="avatar"><img src="{PortraitURL-96}"/></center>
+<h1 id="h1"><a href="/">{Title}</a></h1>
+<div class="desc">{Description}</div>
+{/block:Description}
+
+<div class="links">
+    <a href="/">home</a>
+    <a href="/ask">message</a>
+    <a href="#" class="lh">links</a>
+
+</div>
+   
+</div>
+
+<div id="center">
+
+<div id="content">
+
+{block:Posts}
+<div class="entry" id="{PostID}">
+
+
+{block:Text}
+{block:Title}<h2 id="titletext">{Title}</h2>
+{/block:Title}
+<div class="txt">{Body}</div>
+{/block:Text}
+
+
+{block:Link}
+<h2>
+<a title="{URL}" href="{URL}">{Name} <i class="fa fa-angle-right"></i></a>
+</h2>
+{block:Description}
+<div class="txt">{Description}</div>
+{/block:Description}
+{/block:Link}
+
+
+{block:Photo}
+<div class="ph">
+<a href="{Permalink}"><img src="{PhotoURL-HighRes}" class="bx"/></a>
+</div>
+<div class="cap">{Caption}</div>
+{/block:Photo}
+
+{block:Photoset}
+{block:Photos}
+<div class="photo-data">
+<div class="pxu-photo"><img src="{PhotoURL-500}">
+</div><a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}"></a></div>
+{/block:Photos}
+</div><div class="cap">{Caption}</div></div>
+{/block:Photoset}
+
+
+{block:Quote}
+<div class="qut_hold">
+{block:Source}
+<div class="src">{Source}</div>
+{/block:Source}
+<div class="qut">{Quote}</div>
+</div>
+{/block:Quote}
+
+
+
+{block:IndexPage}
+<div class="p">
+    <a href="{Permalink}" class="nt">{NoteCountWithLabel}</a>     
+    <a href="{Permalink}">{DayofMonth} {Month}</a>         
+    <a href="{ReblogURL}">REBLOG</a>
+
+{block:HasTags}
+<div class="tags {select:Tags}">
+{block:Tags}
+<a href="{TagURL}">#{Tag}</a> 
+{/block:Tags}
+</div>
+{/block:HasTags}
+</div>
+{/block:IndexPage}
+
+
+{block:PermalinkPage}
+
+{block:Date}
+<div class="pph">
+<div class="perma">
+posted {TimeAgo} on {DayofMonthWithSuffix} {Month}
+
+{block:RebloggedFrom}<br>
+<span style="float:right;">
+<a title="{ReblogParentName}" href="{ReblogParentURL}">via</a>
+/
+<a title="{ReblogRootName}" href="{ReblogRootURL}">origin</a>
+</span>
+{/block:RebloggedFrom}
+
+{block:HasTags}<div class="pmt">tags: &nbsp; 
+{block:Tags}<a href="{TagURL}">{Tag}</a> {/block:Tags}
+</div>
+{/block:HasTags}
+</div>
+<a href="#" class="pnh">View {NoteCountWithLabel}</a>
+
+{block:PostNotes}
+<div class="pn">{PostNotes}</div>
+{/block:PostNotes}
+</div>
+{/block:Date}
+{/block:PermalinkPage}
+
+{block:ContentSource}
+<!-- {SourceURL}{block:SourceLogo}<img src="{BlackLogoURL}"
+width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+{/block:SourceLogo}
+{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+
+</div>
+{/block:Posts}
+
+
+ 
+</div>
+
+
+</div>
+
+</body>
+</html>
